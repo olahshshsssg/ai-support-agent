@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://generativelanguage.googleapis.com https://cdn.tailwindcss.com; img-src data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>ShifoMed Tashkent</title>
+  <meta name="description" content="ShifoMed, Ташкент, ул. Афросиаб, 14, м. Ойбек. Прайс в сумах и запись по телефону +998 (71) 200-55-77.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+            display: ['Lexend', '"Source Sans 3"', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            canvas: '#F0FDFA',
+            surface: '#FFFFFF',
+            subtle: '#E8F1F6',
+            ink: '#134E4A',
+            muted: '#475569',
+            inverse: '#0F172A',
+            primary: '#0891B2',
+            secondary: '#22D3EE',
+            line: '#CCFBF1',
+            critical: '#B91C1C',
+            'critical-bg': '#FEF2F2',
+            'warning-bg': '#FFFBEB',
+            'warning-fg': '#134E4A',
+            'warning-line': '#B45309',
+            'ok-bg': '#F0FDFA',
+            'ok-fg': '#134E4A',
+            'ok-line': '#16A34A'
+          },
+          borderRadius: { token: '8px' },
+          maxWidth: { page: '72rem' },
+          height: { chat: '560px' }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      --color-primary: #0891B2;
+      --color-on-primary: #000000;
+      --color-secondary: #22D3EE;
+      --color-on-secondary: #0F172A;
+      --color-accent: #16A34A;
+      --color-surface: #FFFFFF;
+      --color-canvas: #F0FDFA;
+      --color-text: #134E4A;
+      --color-muted: #475569;
+      --color-danger: #DC2626;
+      --color-ring: #0891B2;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --radius: 8px;
+      --font-sans: "Source Sans 3", system-ui, sans-serif;
+      --font-display: Lexend, "Source Sans 3", system-ui, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); font-size: 16px; line-height: 1.5; color: var(--color-text); }
+    h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.2; }
+    :focus { outline: none; }
+    :focus-visible { outline: 3px solid var(--color-ring); outline-offset: 2px; }
+    .skip {
+      position: absolute;
+      left: var(--space-4);
+      top: var(--space-2);
+      transform: translateY(-150%);
+      background: var(--color-primary);
+      color: var(--color-on-primary);
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius);
+      font-weight: 600;
+      min-height: 44px;
+    }
+    .skip:focus { transform: none; z-index: 50; }
+    .btn-primary, .btn-secondary {
+      min-height: 44px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-on-primary);
+      border: 1px solid #0E7490;
+    }
+    .btn-primary:hover { background: #0E7490; color: #FFFFFF; }
+    .btn-primary:disabled { opacity: 0.5; }
+    .btn-secondary {
+      background: var(--color-surface);
+      color: var(--color-text);
+      border: 1px solid #99F6E4;
+    }
+    .btn-secondary:hover { background: var(--color-canvas); }
+    .field {
+      width: 100%;
+      min-height: 44px;
+      border-radius: var(--radius);
+      border: 1px solid #99F6E4;
+      background: var(--color-surface);
+      padding: 10px 12px;
+      color: var(--color-text);
+    }
+    .needs-attention { outline: 3px solid #B45309; outline-offset: 2px; }
+    .md p { margin: 0.35rem 0; }
+    .md ul, .md ol { margin: 0.35rem 0 0.35rem 1.15rem; }
+    .md ul { list-style: disc; }
+    .md ol { list-style: decimal; }
+    .md a { color: var(--color-text); text-decoration: underline; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .btn-primary, .btn-secondary { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-canvas text-ink"><div id="topInfoBar" class="bg-ink text-white">
+  <a class="skip" href="#agent">К чату</a>
+  <div class="mx-auto flex max-w-page flex-wrap items-center gap-x-6 gap-y-1 px-4 py-2 text-sm">
+    <span>Ташкент, ул. Афросиаб, 14, м. Ойбек</span>
+    <span>08:00–22:00</span>
+    <a class="font-semibold underline" href="tel:+998712005577">+998 (71) 200-55-77</a>
+  </div>
+</div>
+
+  <header class="sticky top-0 z-40 border-b border-line bg-surface">
+    <div class="mx-auto flex max-w-page items-center gap-4 px-4 py-3">
+      <a href="#top" class="font-display text-lg font-semibold text-ink">ShifoMed</a>
+      <nav aria-label="Разделы" class="flex min-w-0 flex-1 items-center gap-4 overflow-x-auto text-sm">
+        <a class="inline-flex min-h-11 shrink-0 items-center text-ink underline-offset-4 hover:underline" href="#proof">Факты</a>
+        <a class="inline-flex min-h-11 shrink-0 items-center text-ink underline-offset-4 hover:underline" href="#services">Прайс</a>
+        <a class="inline-flex min-h-11 shrink-0 items-center text-ink underline-offset-4 hover:underline" href="#api-guide">Ключ</a>
+        <a class="inline-flex min-h-11 shrink-0 items-center text-ink underline-offset-4 hover:underline" href="#agent">Чат</a>
+      </nav>
+      <span id="headerStatusBadge" data-state="locked" class="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-token border border-warning-line bg-warning-bg px-3 text-xs font-semibold text-warning-fg">
+        <span id="headerStatusDot" class="h-2 w-2 rounded-full bg-warning-line" aria-hidden="true"></span>
+        <span id="headerStatusText">Ключ не подключён</span>
+      </span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="mx-auto grid max-w-page items-start gap-8 px-4 py-8 lg:grid-cols-12 lg:py-12">
+      <div class="lg:col-span-5">
+        <p class="text-sm font-semibold text-muted">Частная клиника · Ташкент, м. Ойбек</p>
+        <h1 class="mt-3 font-display text-4xl font-semibold text-ink sm:text-5xl">ShifoMed</h1>
+        <p class="mt-4 max-w-prose text-lg text-ink">Приём на ул. Афросиаб, 14, каждый день с 08:00 до 22:00. Чат отвечает на бытовые вопросы и записывает на обследование, если нужен врач.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="btn-primary inline-flex items-center px-4 text-sm" href="tel:+998712005577">Позвонить +998 (71) 200-55-77</a>
+          <a class="btn-secondary inline-flex items-center px-4 text-sm" href="#agent">Открыть чат</a>
+        </div>
+      </div>
+
+      <div id="agent" class="lg:col-span-7">
+        <div class="rounded-token border border-line bg-surface">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line px-4 py-3">
+            <h2 class="font-display text-xl font-semibold">Чат регистратуры</h2>
+            <span id="activeModelBadge" class="inline-flex min-h-11 items-center rounded-token border border-line bg-subtle px-3 text-xs font-semibold">Gemini 3.5</span>
+          </div>
+
+          <div id="agentLockOverlay" class="p-4 sm:p-6">
+            <h3 class="font-sans text-lg font-semibold">Сначала представьтесь</h3>
+            <p class="mt-1 text-sm text-muted">Имя, телефон и ключ Gemini. Демо-ключ проверяет форму и не уходит в Google.</p>
+            <p id="gateHint" class="mt-3 hidden rounded-token border border-warning-line bg-warning-bg px-3 py-2 text-sm text-warning-fg" role="status"></p>
+            <form id="onboardingForm" class="mt-4 space-y-6" novalidate onsubmit="handleOnboardingSubmit(event)">
+              <fieldset class="space-y-3">
+                <legend class="font-semibold">1. Кто вы</legend>
+                <div>
+                  <label for="userNameInput" class="mb-1 block text-sm font-semibold">Имя</label>
+                  <input id="userNameInput" name="userName" autocomplete="name" aria-invalid="false" aria-describedby="userNameHelp userNameError" class="field" placeholder="Малика">
+                  <p id="userNameHelp" class="mt-1 text-xs text-muted">Минимум 2 символа.</p>
+                  <p id="userNameError" class="mt-1 hidden text-sm text-critical" role="alert"></p>
+                </div>
+                <div>
+                  <label for="userPhoneInput" class="mb-1 block text-sm font-semibold">Телефон</label>
+                  <input id="userPhoneInput" name="phone" type="tel" inputmode="tel" autocomplete="tel" value="+998 " aria-invalid="false" aria-describedby="userPhoneHelp userPhoneError" class="field" placeholder="+998 (90) 123-45-67">
+                  <p id="userPhoneHelp" class="mt-1 text-xs text-muted">Начинается с +998, от 9 до 12 цифр.</p>
+                  <p id="userPhoneError" class="mt-1 hidden text-sm text-critical" role="alert"></p>
+                </div>
+              </fieldset>
+              <fieldset class="space-y-2">
+                <legend class="font-semibold">2. Ключ Gemini</legend>
+                <a class="inline-flex text-sm font-semibold text-ink underline" href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Открыть Google AI Studio</a>
+                <div>
+                  <label for="apiKeyInput" class="mb-1 block text-sm font-semibold">Ключ</label>
+                  <input id="apiKeyInput" name="apiKey" type="password" autocomplete="off" spellcheck="false" maxlength="256" aria-invalid="false" aria-describedby="apiKeyHelp apiKeyError" class="field font-mono text-sm" placeholder="AQ...">
+                  <p id="apiKeyHelp" class="mt-1 text-xs text-muted">Начинается с AQ, не короче 20 символов. Имя и телефон уходят в Google вместе с вопросом.</p>
+                  <p id="apiKeyError" class="mt-1 hidden text-sm text-critical" role="alert"></p>
+                </div>
+              </fieldset>
+              <div class="flex flex-wrap items-center justify-end gap-2">
+                <button type="button" onclick="fillDemoKey()" class="rounded-token btn-secondary px-4 py-2 text-sm">Вставить демо-ключ</button>
+                <button type="submit" class="rounded-token btn-primary px-4 py-2 text-sm">Открыть чат</button>
+              </div>
+            </form>
+            <noscript class="mt-3 block text-sm text-critical">Для чата нужен JavaScript.</noscript>
+          </div>
+
+          <div id="agentChatWorkspace" class="hidden h-chat flex-col">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-line px-4 py-2">
+              <div class="min-w-0">
+                <p id="patientNameLabel" class="truncate text-sm font-semibold"></p>
+                <p id="patientPhoneLabel" class="truncate text-xs text-muted"></p>
+              </div>
+              <div class="flex shrink-0 items-center gap-2">
+                <code id="maskedKeyLabel" class="rounded-token bg-subtle px-2 py-1 text-xs font-semibold"></code>
+                <button type="button" onclick="resetRegistration()" class="btn-secondary px-3 text-xs">Сменить ключ</button>
+              </div>
+            </div>
+            <div id="chatMessages" class="min-h-0 flex-1 space-y-2 overflow-y-auto bg-canvas px-4 py-3" role="log" aria-live="polite"></div>
+            <div id="chatTyping" class="hidden px-4 pb-1 text-xs text-muted" aria-live="polite">Печатает…</div>
+            <div class="flex gap-2 overflow-x-auto border-t border-line px-3 py-2" aria-label="Короткие вопросы">
+              <button type="button" class="btn-secondary shrink-0 px-3 text-xs" data-quick-prompt="Что делать при насморке и першении в горле?">Насморк</button>
+              <button type="button" class="btn-secondary shrink-0 px-3 text-xs" data-quick-prompt="Сколько стоит МРТ 1.5 Тл в сумах?">Цена МРТ</button>
+              <button type="button" class="btn-secondary shrink-0 px-3 text-xs" data-quick-prompt="Как подготовиться к комплексному Check-Up?">Подготовка к Check-Up</button>
+              <button type="button" class="btn-secondary shrink-0 px-3 text-xs" data-quick-prompt="Как доехать до клиники у метро Ойбек?">Адрес у м. Ойбек</button>
+            </div>
+            <form id="chatForm" class="flex gap-2 border-t border-line p-3" onsubmit="handleChatSubmit(event)">
+              <label for="chatInput" class="sr-only">Сообщение</label>
+                <textarea id="chatInput" rows="1" class="field max-h-24 min-h-11 flex-1 resize-none text-sm" placeholder="Насморк, цена или адрес"></textarea>
+              <button id="chatSendButton" type="submit" class="self-end rounded-token btn-primary px-4 py-2 text-sm disabled:opacity-50">Отправить</button>
+            </form>
+            <p class="px-4 pb-3 text-xs text-muted">Вопрос без рецептурных лекарств чат разберёт. Если нужен врач, он направит на обследование и жалобу не разбирает. Острое состояние — 103.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="border-t border-line bg-surface">
+      <div class="mx-auto grid max-w-page gap-6 px-4 py-10 sm:grid-cols-3">
+        <div>
+          <p class="font-display text-3xl font-semibold text-ink">45</p>
+          <p class="mt-1 text-sm text-muted">врачей в клинике</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl font-semibold text-ink">08:00–22:00</p>
+          <p class="mt-1 text-sm text-muted">приём каждый день</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl font-semibold text-ink">4</p>
+          <p class="mt-1 text-sm text-muted">направления: терапевт, кардиолог, невролог, эндокринолог</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="api-guide" class="border-t border-line">
+      <div class="mx-auto max-w-page px-4 py-12">
+        <h2 class="font-display text-3xl font-semibold">Как устроен чат</h2>
+        <p class="mt-2 max-w-prose text-muted">Бытовой вопрос получает ответ. Если нужен врач, чат направляет на обследование и жалобу не разбирает. Острое состояние — звонок 103.</p>
+        <ol class="mt-6 max-w-prose list-decimal space-y-3 pl-5">
+          <li>Откройте <a class="font-semibold text-ink underline" href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">aistudio.google.com/app/apikey</a>.</li>
+          <li>Войдите в обычный аккаунт Google.</li>
+          <li>Создайте ключ. Строка начинается с AQ. Клиника его не видит.</li>
+          <li>Вставьте ключ в форму. Кнопка «Вставить демо-ключ» подставляет тестовый ключ и не обращается к Google.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="services" class="border-t border-line bg-surface">
+      <div class="mx-auto max-w-page px-4 py-12">
+        <h2 class="font-display text-3xl font-semibold">Прайс</h2>
+        <p class="mt-2 max-w-prose text-muted">Цены в сумах. Если чат открыт, кнопка отправит вопрос туда.</p>
+        <div class="mt-6 overflow-x-auto">
+          <table class="w-full min-w-[36rem] border-collapse text-left text-sm">
+            <thead>
+              <tr class="border-b border-line text-muted">
+                <th scope="col" class="py-2 pr-4 font-semibold">Услуга</th>
+                <th scope="col" class="py-2 pr-4 font-semibold">Цена</th>
+                <th scope="col" class="py-2 font-semibold"><span class="sr-only">Вопрос</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-line">
+                <th scope="row" class="py-3 pr-4 font-semibold">Первичный приём специалиста<br><span class="font-display text-xs font-normal text-muted">Терапевт, кардиолог, невролог или эндокринолог</span></th>
+                <td class="py-3 pr-4 whitespace-nowrap">250 000 сум</td>
+                <td class="py-3 text-right"><button type="button" class="inline-flex min-h-11 items-center font-semibold text-ink underline" data-service-question="Сколько стоит первичный приём терапевта, кардиолога, невролога или эндокринолога и как записаться?">Спросить</button></td>
+              </tr>
+              <tr class="border-b border-line">
+                <th scope="row" class="py-3 pr-4 font-semibold">УЗИ одной зоны<br><span class="font-display text-xs font-normal text-muted">Брюшная полость или щитовидная железа</span></th>
+                <td class="py-3 pr-4 whitespace-nowrap">180 000 сум</td>
+                <td class="py-3 text-right"><button type="button" class="inline-flex min-h-11 items-center font-semibold text-ink underline" data-service-question="Сколько стоит УЗИ одной зоны — брюшная полость или щитовидная железа — и как к нему подготовиться?">Спросить</button></td>
+              </tr>
+              <tr class="border-b border-line">
+                <th scope="row" class="py-3 pr-4 font-semibold">МРТ 1.5 Тл<br><span class="font-display text-xs font-normal text-muted">Головной мозг или позвоночник</span></th>
+                <td class="py-3 pr-4 whitespace-nowrap">650 000 сум</td>
+                <td class="py-3 text-right"><button type="button" class="inline-flex min-h-11 items-center font-semibold text-ink underline" data-service-question="Сколько стоит МРТ головного мозга или позвоночника на томографе 1.5 Тл за 650 000 сум?">Спросить</button></td>
+              </tr>
+              <tr class="border-b border-line">
+                <th scope="row" class="py-3 pr-4 font-semibold">Кардио-Чекап: Здоровое сердце<br><span class="font-display text-xs font-normal text-muted">Осмотр у кардиолога</span></th>
+                <td class="py-3 pr-4 whitespace-nowrap">950 000 сум</td>
+                <td class="py-3 text-right"><button type="button" class="inline-flex min-h-11 items-center font-semibold text-ink underline" data-service-question="Расскажите про программу Кардио-Чекап: Здоровое сердце за 950 000 сум и как к ней подготовиться.">Спросить</button></td>
+              </tr>
+              <tr>
+                <th scope="row" class="py-3 pr-4 font-semibold">Check-Up: Премиум Ташкент<br><span class="font-display text-xs font-normal text-muted">Состав сверх прайса скажет регистратура</span></th>
+                <td class="py-3 pr-4 whitespace-nowrap">1 450 000 сум</td>
+                <td class="py-3 text-right"><button type="button" class="inline-flex min-h-11 items-center font-semibold text-ink underline" data-service-question="Как устроен Комплексный Check-Up: Премиум Ташкент за 1 450 000 сум и как к нему подготовиться?">Спросить</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-t border-line">
+      <div class="mx-auto flex max-w-page flex-col gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 class="font-display text-2xl font-semibold">Запись в регистратуру</h2>
+          <p class="mt-1 text-muted">ул. Афросиаб, 14, м. Ойбек. Острое состояние — 103.</p>
+        </div>
+        <a class="btn-primary inline-flex items-center px-4 text-sm" href="tel:+998712005577">Позвонить +998 (71) 200-55-77</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-white">
+    <div class="mx-auto flex max-w-page flex-col gap-2 px-4 py-6 text-sm sm:flex-row sm:items-center sm:justify-between">
+      <p>ShifoMed Tashkent, ул. Афросиаб, 14, м. Ойбек</p>
+      <p>08:00–22:00 · <a class="font-semibold underline" href="tel:+998712005577">+998 (71) 200-55-77</a> · скорая 103</p>
+    </div>
+  </footer>
+
+  <script>
+    var DEMO_KEY = 'AQDemoKeyClinicShifoMedey99';
+    var STORAGE_KEY = 'shifomed.appState.v1';
+    var EMERGENCY_LINE = '⚠️ При острых состояниях немедленно вызовите скорую помощь в Ташкенте по короткому номеру 103!';
+    var DISCLAIMER_RU = 'Это не диагноз и не назначение лекарств.';
+    var DISCLAIMER_UZ = 'Bu tashxis emas va dori tayinlamaydi.';
+    var ALLOWED_MODELS = ['Gemini 3.5'];
+
+    var CLINIC = {
+      address: 'ул. Афросиаб, 14, м. Ойбек',
+      hours: '08:00–22:00',
+      phone: '+998 (71) 200-55-77',
+      phoneHref: 'tel:+998712005577'
+    };
+
+    var PRICES = {
+      consult: '250 000 сум',
+      us: '180 000 сум',
+      mri: '650 000 сум',
+      cardio: '950 000 сум',
+      premium: '1 450 000 сум'
+    };
+
+    var MODEL_PROFILES = {
+      'Gemini 3.5': {
+        apiModel: 'gemini-3.5-flash-lite',
+        temperature: 0.2,
+        maxOutputTokens: 300,
+        label: 'коротко',
+        style: 'Коротко. Вопрос без рецептурных лекарств — бытовой ответ без названий препаратов и доз. Если нужен врач — только запись на обследование, без разбора жалобы.',
+        notice: 'Gemini 3.5.'
+      }
+    };
+
+    var appState = {
+      isRegistered: false,
+      userName: '',
+      userPhone: '+998 ',
+      apiKey: '',
+      maskedKey: '',
+      selectedModel: 'Gemini 3.5',
+      chatHistory: []
+    };
+
+    var isSending = false;
+    var pendingQuestion = '';
+
+    function maskKey(key) {
+      if (!key) return '';
+      if (key.length <= 14) return key.slice(0, 4) + '••••';
+      return key.slice(0, 10) + '••••' + key.slice(-4);
+    }
+
+    function isDemoKey(key) {
+      return key === DEMO_KEY || key.indexOf('AQDemo') === 0;
+    }
+
+    function isValidName(value) {
+      return value.trim().length >= 2;
+    }
+
+    function isValidPhone(value) {
+      var trimmed = value.trim();
+      if (trimmed.indexOf('+998') !== 0) return false;
+      var digits = trimmed.replace(/\D/g, '');
+      return digits.length >= 9 && digits.length <= 12;
+    }
+
+    function isValidKey(value) {
+      var key = value.trim();
+      return key.indexOf('AQ') === 0 && key.length >= 20;
+    }
+
+    function isUzbek(text) {
+      return /salom|rahmat|narx|shifokor|qanday|manzil|yozil|iltimos|kerak|qayerda|so'm|so‘m|som\b/i.test(text);
+    }
+
+    function isEmergency(text) {
+      var q = text.toLowerCase();
+      if (q.indexOf('не могу дышать') !== -1) return true;
+      if (q.indexOf('потеря сознания') !== -1) return true;
+      if (q.indexOf('потерял сознание') !== -1 || q.indexOf('потеряла сознание') !== -1) return true;
+      if (q.indexOf('инсульт') !== -1) return true;
+      if (q.indexOf('кровотеч') !== -1) return true;
+      if (q.indexOf('острая боль в сердце') !== -1) return true;
+      if (q.indexOf('острой боли в сердце') !== -1) return true;
+      return false;
+    }
+
+    function bookLine(uz) {
+      if (uz) {
+        return 'Yozilish: [' + CLINIC.phone + '](' + CLINIC.phoneHref + '). Manzil: Toshkent, Afrosoib koʻchasi, 14, Oybek metrosi. Ish vaqti: ' + CLINIC.hours + '.';
+      }
+      return 'Записаться: [' + CLINIC.phone + '](' + CLINIC.phoneHref + '). Адрес: ' + CLINIC.address + ', Ташкент. График: ' + CLINIC.hours + '.';
+    }
+
+    function disclaimer(uz) {
+      return uz ? DISCLAIMER_UZ : DISCLAIMER_RU;
+    }
+
+    function detectIntent(text) {
+      var q = text.toLowerCase();
+      if (/подготов/.test(q) && /премиум|check-up|чекап|checkup|комплексн/.test(q)) return 'prep-premium';
+      if (/подготов/.test(q) && /кардио/.test(q)) return 'prep-cardio';
+      if (/подготов/.test(q) && /мрт|mri|томограф/.test(q)) return 'prep-mri';
+      if (/подготов/.test(q) && /узи|uzi|ультраз/.test(q)) return 'prep-uzi';
+      if (/подготов|натощак|противопоказ/.test(q)) return 'prep';
+      if (/мрт|mri|томограф/.test(q)) return 'mri';
+      if (/узи|uzi|ультраз/.test(q)) return 'uzi';
+      if (/кардио-чекап|кардио чекап|здоровое сердце/.test(q)) return 'cardio';
+      if (/премиум|check-up|чекап|checkup|комплексн/.test(q)) return 'premium';
+      if (/адрес|ойбек|афросиаб|как доехать|где находит|метро|manzil/.test(q)) return 'address';
+      if (/график|до скольки|режим работы|часы работы/.test(q)) return 'hours';
+      if (/запис|позвон|регистратур/.test(q)) return 'booking';
+      if (/прайс|цен[аы]|сколько стоит|стоимост|narx/.test(q)) return 'prices';
+      if (/щитовид|гормон|эндокрин|сахар/.test(q)) return 'endo';
+      if (/головн|головокруж|мигрен|неврол|позвоноч|спин/.test(q)) return 'neuro';
+      if (/сердц|давлен|пульс|кардио/.test(q)) return 'heart';
+      if (/живот|печен|почк|брюшн/.test(q)) return 'abdomen';
+      if (/терапевт|кардиолог|невролог|эндокринолог|при[её]м/.test(q)) return 'consult';
+      return 'general';
+    }
+
+    function priceBlock(uz) {
+      if (uz) {
+        return [
+          'Narxlar:',
+          'qabul — ' + PRICES.consult,
+          'UZI — ' + PRICES.us,
+          'MRT 1.5 Tl — ' + PRICES.mri,
+          'Kardio-Chekap — ' + PRICES.cardio,
+          'Premium Check-Up — ' + PRICES.premium
+        ].join('\n');
+      }
+      return [
+        'Прайс:',
+        'приём специалиста — ' + PRICES.consult,
+        'УЗИ одной зоны — ' + PRICES.us,
+        'МРТ 1.5 Тл — ' + PRICES.mri,
+        'Кардио-Чекап — ' + PRICES.cardio,
+        'Check-Up Премиум — ' + PRICES.premium
+      ].join('\n');
+    }
+
+    function isPriceQuestion(text) {
+      return /сколько|цен|стоим|прайс|narx|qancha/.test(String(text || '').toLowerCase());
+    }
+
+    function needsExamination(text) {
+      var q = String(text || '').toLowerCase();
+      if (isPriceQuestion(q) && !/болит|боль|температур|кров|одыш|рвот|понос|лекар|таблет|антибиот|доз|мг|рецепт/.test(q)) return false;
+      if (/беремен|младен|груднич|новорож|ребёнк|ребенок|у реб|у ребенка|мой ребёнок|моя дочь|мой сын/.test(q)) return true;
+      if (/давлен|сердц|аритм|стенокар|боль в груди|болит грудь|в груди бол|щитовид|сахар в крови|диабет|астм/.test(q)) return true;
+      if (/кров(ь|ян|ав)|кровохар|чёрн(ый|ого) стул|черный стул|моч[аеиу]/.test(q)) return true;
+      if (/одышк|задыха|не хватает воздуха|судорог|обморок|онемен|паралич|перекос|не говорит/.test(q)) return true;
+      if (/ожог|перелом|вывих|глубокая рана|ушиб голов|травм|аппендицит|желтух|желчн/.test(q)) return true;
+      if (/антибиотик|рецепт|дозиров|\d+\s*мг|(^|\s)мг(\s|$)|назначь|какое лекарств|какие таблет|сколько (таблет|капсул|раз)/.test(q)) return true;
+      if (/диагноз|что со мной|что у меня|какая болезнь|рак|опухол|аллергическ(ий|ого) шок/.test(q)) return true;
+      if (/температур[а-яё]*\s*(от\s*)?(3[9]|4\d)|39\s*°|40\s*°|39\s*град|40\s*град|лихорад/.test(q)) return true;
+      if (/(рвот|рвет|понос|диаре)/.test(q) && /(кров|чёрн|черн|сутки|два дня|три дня|не пью|не могу пить|сильн|ребен|ребён)/.test(q)) return true;
+      if (/сильн(ая|ой|ую) боль|невыносим|внезапн|живот болит сильно|боль в живот/.test(q)) return true;
+      if (/голов/.test(q) && /рвот|онемен|речь|внезап|сильнейш|обморок|шея/.test(q)) return true;
+      if (/сыпь/.test(q) && /температур|пузыр|лицо|не дыш/.test(q)) return true;
+      return false;
+    }
+
+    function examinationReferral(query) {
+      var q = query.toLowerCase();
+      var exam = 'приём терапевта и осмотр';
+      if (/сердц|давлен|аритм|груд/.test(q)) exam = 'приём кардиолога и кардиологическое обследование';
+      else if (/голов|спин|онемен|речь|судорог/.test(q)) exam = 'приём невролога и обследование';
+      else if (/щитовид|сахар|гормон|диабет/.test(q)) exam = 'приём эндокринолога и обследование';
+      else if (/живот|печен|почк|узи/.test(q)) exam = 'приём терапевта и УЗИ нужной зоны';
+      return 'Это нужно смотреть на обследовании. В чате я такие жалобы не разбираю и лекарства не назначаю.\n\nЗапишитесь: ' + exam + '. Приём — ' + PRICES.consult + '. УЗИ одной зоны — ' + PRICES.us + '. МРТ 1.5 Тл — ' + PRICES.mri + ', если его назначит врач.\n\n' + bookLine(isUzbek(query));
+    }
+
+    function simpleCare(query) {
+      var q = query.toLowerCase();
+      var book = bookLine(isUzbek(query));
+      var note = disclaimer(isUzbek(query));
+      if (/насморк|сопл|заложен|простуд|орви|перш|горл|кашел|чиха|температур/.test(q)) {
+        return 'Похоже на обычную простуду. Отдохните, пейте тёплое, промывайте нос солёной водой. Горло можно полоскать тёплой водой. Лекарства не назначаю.\n\nЕсли держится дольше трёх дней, температура растёт, трудно дышать или болит грудь — запишитесь на обследование. Приём терапевта — ' + PRICES.consult + '.\n\n' + book + '\n\n' + note;
+      }
+      if (/головн|голов/.test(q)) {
+        return 'Разовая слабая головная боль часто проходит после воды, еды и отдыха в тишине. Лекарства не назначаю.\n\nЕсли боль внезапная, очень сильная, с рвотой, онемением или путаной речью — нужно обследование у невролога. Приём — ' + PRICES.consult + '.\n\n' + book + '\n\n' + note;
+      }
+      if (/изжог|вздут|тяжесть после ед/.test(q)) {
+        return 'Разовая изжога или тяжесть после еды: меньшие порции, не ложиться сразу после ужина, без острого и газировки на сегодня.\n\nЕсли боль в животе сильная, есть рвота или кровь — к терапевту, в чате это не разбираю. Приём — ' + PRICES.consult + '.\n\n' + book + '\n\n' + note;
+      }
+      if (/царап|синяк|ссадин|мозол/.test(q)) {
+        return 'Мелкую царапину промойте водой с мылом и закройте чистой повязкой. Синяк обычно сходит сам.\n\nГлубокая рана, укус, быстро растущий синяк или травма головы — к врачу, в чате это не разбираю. Приём — ' + PRICES.consult + '.\n\n' + book + '\n\n' + note;
+      }
+      if (/устал|недосып|разбит/.test(q)) {
+        return 'Если просто не выспались: сон, вода, обычная еда.\n\nЕсли слабость длится неделями, есть температура или одышка — нужно обследование у терапевта, ' + PRICES.consult + '.\n\n' + book + '\n\n' + note;
+      }
+      if (/понос|диаре|тошнит|тошнот|рвот|жидк[а-яё]* стул|стул жидк/.test(q)) {
+        return 'Если стул жидкий или тошнит один день и нет крови: пейте воду маленькими глотками, ешьте рис, банан, сухари. Лекарства в чате не назначаю.\n\nКровь, чёрный стул, невозможность пить, больше суток или ребёнок — это уже обследование, в чате такое не разбираю. Приём терапевта — ' + PRICES.consult + '.\n\n' + book + '\n\n' + note;
+      }
+      return '';
+    }
+
+    function generateClinicResponse(query) {
+      var uz = isUzbek(query);
+      var intent = detectIntent(query);
+      if (isEmergency(query)) {
+        var lead = uz
+          ? 'Bu chat tez yordam emas. Hoziroq 103 ga qoʻngʻiroq qiling.'
+          : 'Чат скорую не заменяет. Звоните 103 и не садитесь за руль.';
+        return EMERGENCY_LINE + '\n\n' + lead;
+      }
+      if (needsExamination(query)) return examinationReferral(query);
+      var simple = simpleCare(query);
+      if (simple) return simple;
+      return briefResponse(intent, uz);
+    }
+
+    function briefResponse(intent, uz) {
+      var book = bookLine(uz);
+      if (intent === 'mri' || intent === 'prep-mri') {
+        return (uz ? 'MRT 1.5 Tl — ' : 'МРТ 1.5 Тл — ') + PRICES.mri + (uz ? ' (bosh miya yoki umurtqa).' : ' (головной мозг или позвоночник).') + '\n\n' + book;
+      }
+      if (intent === 'uzi' || intent === 'prep-uzi' || intent === 'abdomen' || intent === 'endo') {
+        return (uz ? 'Bitta zona UZI — ' : 'УЗИ одной зоны — ') + PRICES.us + (uz ? ' (qorin boʻshligʻi yoki qalqonsimon bez).' : ' (брюшная полость или щитовидная железа).') + '\n\n' + book;
+      }
+      if (intent === 'cardio' || intent === 'prep-cardio' || intent === 'heart') {
+        return (uz ? 'Kardio-Chekap — ' : 'Кардио-Чекап: Здоровое сердце — ') + PRICES.cardio + '\n\n' + book;
+      }
+      if (intent === 'premium' || intent === 'prep-premium' || intent === 'prep') {
+        return (uz ? 'Premium Check-Up — ' : 'Check-Up Премиум Ташкент — ') + PRICES.premium + '\n\n' + book;
+      }
+      if (intent === 'consult' || intent === 'neuro') {
+        return (uz ? 'Mutaxassis qabuli — ' : 'Приём специалиста — ') + PRICES.consult + '\n\n' + book;
+      }
+      if (intent === 'address' || intent === 'hours' || intent === 'booking') {
+        return book;
+      }
+      return priceBlock(uz) + '\n\n' + book;
+    }
+
+    function replyNeedsBlock(text) {
+      return /антибиотик|рецепт|\d+\s*мг|дозировк|амоксицилл|азитромицин|парацетамол|ибупрофен|нурофен/i.test(String(text || ''));
+    }
+
+    function buildSystemPrompt() {
+      return [
+        'Ты регистратор клиники ShifoMed Tashkent на модели Gemini 3.5. Пиши коротко и простым языком.',
+        MODEL_PROFILES['Gemini 3.5'].style,
+        'Отвечай на языке пациента: русский или узбекский (латиница).',
+        'Пациент: ' + appState.userName + '. Телефон: ' + appState.userPhone + '.',
+        'Если вопрос решается без тяжёлых и рецептурных лекарств, ответь: 2–4 бытовых шага. Названия препаратов и дозы не пиши.',
+        'Сюда входят насморк, першение, лёгкий кашель, разовая слабая головная боль, разовая изжога, мелкая царапина, недосып, жидкий стул или тошнота один день без крови.',
+        'Если нужно вмешательство врача, не объясняй болезнь и не предлагай лечение. Напиши только: это нужно смотреть на обследовании, и дай запись: приём 250 000 сум, при необходимости УЗИ 180 000 сум или МРТ 650 000 сум, телефон клиники.',
+        'На обследование без разбора жалобы: дети и беременность, сердце и давление, одышка, кровь, сильная боль, травма, температура от 39, диагноз, рецепт, доза, сахарный диабет, астма.',
+        'Адрес: ул. Афросиаб, 14, м. Ойбек, Ташкент. График: 08:00 - 22:00. Телефон записи: +998 (71) 200-55-77.',
+        'Прайс только в сумах (UZS). Другие валюты и скидки не выдумывай:',
+        'Первичный приём терапевта, кардиолога, невролога или эндокринолога: 250 000 сум.',
+        'УЗИ одной зоны (брюшная полость или щитовидная железа): 180 000 сум.',
+        'МРТ 1.5 Тл (головной мозг или позвоночник): 650 000 сум.',
+        'Программа «Кардио-Чекап: Здоровое сердце»: 950 000 сум.',
+        'Программа «Комплексный Check-Up: Премиум Ташкент»: 1 450 000 сум.',
+        'Если услуги нет в этом списке, скажи, что цену назовёт регистратура. Не придумывай состав чекапа сверх этой рамки.',
+        'Ты не ставишь клинических диагнозов и не назначаешь рецептурные препараты.',
+        'Если сообщение содержит острую боль в сердце, «не могу дышать», потерю сознания, инсульт или кровотечение, первая строка ответа обязана быть ровно такой:',
+        EMERGENCY_LINE,
+        'После неё направь звонить 103 и не предлагай запись вместо скорой.',
+        'Если речь о самочувствии, в конце одна фраза: это не диагноз и не назначение лекарств.'
+      ].join('\n');
+    }
+
+    function buildGreeting() {
+      return 'Здравствуйте, ' + appState.userName + '. На вопросы без рецептурных лекарств отвечу прямо. Если нужен врач, запишу на обследование и жалобу разбирать не буду.\n\n' + bookLine(false);
+    }
+
+    function saveState() {
+      try {
+        var snapshot = {
+          userName: appState.userName,
+          userPhone: appState.userPhone,
+          selectedModel: appState.selectedModel
+        };
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
+      } catch (err) {
+        /* сессия может быть закрыта политикой браузера */
+      }
+    }
+
+    function loadState() {
+      try {
+        var raw = sessionStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        var data = JSON.parse(raw);
+        if (!data || typeof data !== 'object') return;
+        if (data.apiKey || data.chatHistory) sessionStorage.removeItem(STORAGE_KEY);
+        if (ALLOWED_MODELS.indexOf(data.selectedModel) === -1) data.selectedModel = 'Gemini 3.5';
+        appState.userName = data.userName || '';
+        appState.userPhone = data.userPhone || '+998 ';
+        appState.selectedModel = data.selectedModel;
+        appState.isRegistered = false;
+        appState.apiKey = '';
+        appState.chatHistory = [];
+      } catch (err) {
+        /* повреждённая сессия не блокирует лендинг */
+      }
+    }
+
+    function setFieldError(id, message) {
+      var el = document.getElementById(id);
+      var input = document.getElementById(id.replace('Error', 'Input'));
+      if (!message) {
+        el.textContent = '';
+        el.classList.add('hidden');
+        if (input) input.setAttribute('aria-invalid', 'false');
+        return;
+      }
+      el.textContent = message;
+      el.classList.remove('hidden');
+      if (input) input.setAttribute('aria-invalid', 'true');
+    }
+
+    function clearErrors() {
+      setFieldError('userNameError', '');
+      setFieldError('userPhoneError', '');
+      setFieldError('apiKeyError', '');
+    }
+
+    function applyModel() {
+      appState.selectedModel = 'Gemini 3.5';
+      var badge = document.getElementById('activeModelBadge');
+      if (badge) badge.textContent = 'Gemini 3.5';
+    }
+
+    function setConnectionBadge(active) {
+      var badge = document.getElementById('headerStatusBadge');
+      var dot = document.getElementById('headerStatusDot');
+      var text = document.getElementById('headerStatusText');
+      badge.classList.remove('border-warning-line', 'bg-warning-bg', 'text-warning-fg', 'border-ok-line', 'bg-ok-bg', 'text-ok-fg');
+      dot.classList.remove('bg-warning-fg', 'bg-ok-fg');
+      if (active) {
+        badge.setAttribute('data-state', 'ready');
+        badge.classList.add('border-ok-line', 'bg-ok-bg', 'text-ok-fg');
+        dot.classList.add('bg-ok-fg');
+        text.textContent = 'Ключ активен';
+      } else {
+        badge.setAttribute('data-state', 'locked');
+        badge.classList.add('border-warning-line', 'bg-warning-bg', 'text-warning-fg');
+        dot.classList.add('bg-warning-fg');
+        text.textContent = 'Ключ не подключён';
+      }
+    }
+
+    function showLockedUi() {
+      document.getElementById('agentLockOverlay').classList.remove('hidden');
+      var workspace = document.getElementById('agentChatWorkspace');
+      workspace.classList.add('hidden');
+      workspace.classList.remove('flex');
+      setConnectionBadge(false);
+    }
+
+    function showUnlockedUi() {
+      document.getElementById('agentLockOverlay').classList.add('hidden');
+      var workspace = document.getElementById('agentChatWorkspace');
+      workspace.classList.remove('hidden');
+      workspace.classList.add('flex');
+      document.getElementById('patientNameLabel').textContent = appState.userName;
+      document.getElementById('patientPhoneLabel').textContent = appState.userPhone;
+      document.getElementById('maskedKeyLabel').textContent = appState.maskedKey;
+      setConnectionBadge(true);
+      renderMessages();
+      var chatInput = document.getElementById('chatInput');
+      if (chatInput) chatInput.focus();
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    function inlineMarkdown(value) {
+      var s = value;
+      s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+      s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+      s = s.replace(/\[([^\]]+)\]\((tel:\+?[0-9-]+)\)/g, '<a href="$2">$1</a>');
+      s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      s = s.replace(/(^|[\s(])_([^_]+)_/g, '$1<em>$2</em>');
+      return s;
+    }
+
+    function renderMarkdown(src) {
+      var escaped = escapeHtml(src).replace(/\r\n/g, '\n');
+      var lines = escaped.split('\n');
+      var html = [];
+      var listType = '';
+      function closeList() {
+        if (!listType) return;
+        html.push(listType === 'ol' ? '</ol>' : '</ul>');
+        listType = '';
+      }
+      lines.forEach(function (line) {
+        var ordered = line.match(/^(\d+)\. (.*)$/);
+        var unordered = line.match(/^- (.*)$/);
+        if (ordered) {
+          if (listType !== 'ol') {
+            closeList();
+            html.push('<ol>');
+            listType = 'ol';
+          }
+          html.push('<li>' + inlineMarkdown(ordered[2]) + '</li>');
+          return;
+        }
+        if (unordered) {
+          if (listType !== 'ul') {
+            closeList();
+            html.push('<ul>');
+            listType = 'ul';
+          }
+          html.push('<li>' + inlineMarkdown(unordered[1]) + '</li>');
+          return;
+        }
+        closeList();
+        if (!line.trim()) {
+          html.push('');
+          return;
+        }
+        if (line.indexOf('### ') === 0) {
+          html.push('<h3>' + inlineMarkdown(line.slice(4)) + '</h3>');
+          return;
+        }
+        if (line.indexOf('## ') === 0 || line.indexOf('# ') === 0) {
+          html.push('<h3>' + inlineMarkdown(line.replace(/^#+\s/, '')) + '</h3>');
+          return;
+        }
+        html.push('<p>' + inlineMarkdown(line) + '</p>');
+      });
+      closeList();
+      return '<div class="md">' + html.join('') + '</div>';
+    }
+
+    function messageBody(role, text) {
+      if (role === 'user' || role === 'system') {
+        return '<p>' + escapeHtml(text).replace(/\n/g, '<br>') + '</p>';
+      }
+      if (text.indexOf(EMERGENCY_LINE) === 0) {
+        var rest = text.slice(EMERGENCY_LINE.length).trim();
+        var alert = '<div class="mb-2 rounded-token border border-critical bg-critical-bg px-3 py-2 text-sm font-semibold text-critical">' + escapeHtml(EMERGENCY_LINE) + '</div>';
+        return alert + (rest ? renderMarkdown(rest) : '');
+      }
+      return renderMarkdown(text);
+    }
+
+    function renderMessages() {
+      var box = document.getElementById('chatMessages');
+      box.innerHTML = appState.chatHistory.map(function (msg) {
+        if (msg.role === 'system') {
+          return '<div class="mx-auto max-w-[95%] bg-subtle px-3 py-1 text-center text-xs text-muted">' + escapeHtml(msg.text) + '</div>';
+        }
+        if (msg.role === 'user') {
+          return '<div class="ml-auto max-w-[85%] rounded-token bg-secondary px-3 py-2 text-sm text-inverse">' + messageBody('user', msg.text) + '</div>';
+        }
+        return '<div class="mr-auto max-w-[95%] rounded-token border border-line bg-surface px-3 py-2 text-sm text-ink">' + messageBody('assistant', msg.text) + '</div>';
+      }).join('');
+      box.scrollTop = box.scrollHeight;
+    }
+
+    function pushMessage(role, text) {
+      appState.chatHistory.push({ role: role, text: text });
+      renderMessages();
+    }
+
+    function fillDemoKey() {
+      var input = document.getElementById('apiKeyInput');
+      input.value = DEMO_KEY;
+      input.classList.remove('needs-attention');
+      setFieldError('apiKeyError', '');
+      input.focus();
+    }
+
+    function focusRegistration() {
+      document.getElementById('agent').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      var key = document.getElementById('apiKeyInput');
+      key.classList.add('needs-attention');
+      var hint = document.getElementById('gateHint');
+      hint.textContent = pendingQuestion
+        ? 'Сначала укажите имя, телефон и ключ. Затем отправим вопрос: «' + pendingQuestion + '».'
+        : 'Чтобы спросить про услугу, заполните имя, телефон +998 и ключ Gemini (AQ...).';
+      hint.classList.remove('hidden');
+      setTimeout(function () { key.focus(); }, 350);
+    }
+
+    function handleOnboardingSubmit(event) {
+      event.preventDefault();
+      clearErrors();
+      var name = document.getElementById('userNameInput').value;
+      var phone = document.getElementById('userPhoneInput').value;
+      var key = document.getElementById('apiKeyInput').value.trim();
+      var model = 'Gemini 3.5';
+      var valid = true;
+      var firstInvalid = '';
+      if (!isValidName(name)) {
+        setFieldError('userNameError', 'Укажите имя: минимум 2 символа.');
+        if (!firstInvalid) firstInvalid = 'userNameInput';
+        valid = false;
+      }
+      if (!isValidPhone(phone)) {
+        setFieldError('userPhoneError', 'Номер должен начинаться с +998 и содержать от 9 до 12 цифр.');
+        if (!firstInvalid) firstInvalid = 'userPhoneInput';
+        valid = false;
+      }
+      if (!isValidKey(key)) {
+        setFieldError('apiKeyError', 'Ключ Gemini должен начинаться с AQ и быть не короче 20 символов.');
+        if (!firstInvalid) firstInvalid = 'apiKeyInput';
+        valid = false;
+      }
+      if (ALLOWED_MODELS.indexOf(model) === -1) model = 'Gemini 3.5';
+      if (!valid) {
+        document.getElementById(firstInvalid).focus();
+        return;
+      }
+
+      appState.isRegistered = true;
+      appState.userName = name.trim();
+      appState.userPhone = phone.trim();
+      appState.apiKey = key;
+      appState.maskedKey = maskKey(key);
+      appState.chatHistory = [];
+      applyModel();
+      pushMessage('assistant', buildGreeting());
+      saveState();
+      showUnlockedUi();
+      document.getElementById('gateHint').classList.add('hidden');
+      if (pendingQuestion) {
+        var queued = pendingQuestion;
+        pendingQuestion = '';
+        sendUserQuery(queued);
+      }
+    }
+
+    function resetRegistration() {
+      var keepModel = appState.selectedModel;
+      appState.isRegistered = false;
+      appState.userName = '';
+      appState.userPhone = '+998 ';
+      appState.apiKey = '';
+      appState.maskedKey = '';
+      appState.chatHistory = [];
+      pendingQuestion = '';
+      try { sessionStorage.removeItem(STORAGE_KEY); } catch (err) { /* ignore */ }
+      document.getElementById('userNameInput').value = '';
+      document.getElementById('userPhoneInput').value = '+998 ';
+      document.getElementById('apiKeyInput').value = '';
+      document.getElementById('chatInput').value = '';
+      document.getElementById('gateHint').classList.add('hidden');
+      clearErrors();
+      applyModel();
+      showLockedUi();
+      document.getElementById('userNameInput').focus();
+    }
+
+    function askServiceQuestion(question) {
+      if (!appState.isRegistered) {
+        pendingQuestion = question;
+        focusRegistration();
+        return;
+      }
+      document.getElementById('agent').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      sendUserQuery(question);
+    }
+
+    function handleChatSubmit(event) {
+      event.preventDefault();
+      if (!appState.isRegistered) return;
+      var input = document.getElementById('chatInput');
+      var query = input.value.trim();
+      if (!query || isSending) return;
+      input.value = '';
+      sendUserQuery(query);
+    }
+
+    function setTyping(on) {
+      isSending = on;
+      document.getElementById('chatTyping').classList.toggle('hidden', !on);
+      document.getElementById('chatSendButton').disabled = on;
+    }
+
+    function ensureEmergencyBanner(query, reply) {
+      if (!isEmergency(query)) return reply;
+      var text = String(reply || '').trim();
+      var rest = text.split(EMERGENCY_LINE).join('').trim();
+      return EMERGENCY_LINE + (rest ? '\n\n' + rest : '');
+    }
+
+    function sanitizeError(message) {
+      return String(message || 'Запрос к Gemini не выполнен.').replace(/AQ[A-Za-z0-9_-]{16,}/g, 'AQ…');
+    }
+
+    function extractGeminiText(data) {
+      var parts = data && data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts;
+      if (!parts) return '';
+      return parts.filter(function (part) { return part.text && !part.thought; }).map(function (part) { return part.text; }).join('\n').trim();
+    }
+
+    async function callGemini(query) {
+      var profile = MODEL_PROFILES[appState.selectedModel];
+      var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + profile.apiModel + ':generateContent';
+      var contents = [];
+      appState.chatHistory.forEach(function (msg) {
+        if (msg.role !== 'user' && msg.role !== 'assistant') return;
+        var role = msg.role === 'assistant' ? 'model' : 'user';
+        if (contents.length && contents[contents.length - 1].role === role) {
+          contents[contents.length - 1].parts[0].text += '\n\n' + msg.text;
+          return;
+        }
+        contents.push({ role: role, parts: [{ text: msg.text }] });
+      });
+      while (contents.length && contents[0].role === 'model') contents.shift();
+      if (!contents.length || contents[contents.length - 1].role !== 'user') {
+        contents.push({ role: 'user', parts: [{ text: query }] });
+      }
+      var body = {
+        systemInstruction: { parts: [{ text: buildSystemPrompt() }] },
+        contents: contents.slice(-12),
+        generationConfig: {
+          temperature: profile.temperature,
+          maxOutputTokens: profile.maxOutputTokens
+        }
+      };
+
+      async function request(payload) {
+        var controller = new AbortController();
+        var timer = setTimeout(function () { controller.abort(); }, 25000);
+        try {
+          var response = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'x-goog-api-key': appState.apiKey
+            },
+            body: JSON.stringify(payload),
+            signal: controller.signal
+          });
+          var data = await response.json().catch(function () { return {}; });
+          return { response: response, data: data };
+        } catch (err) {
+          var networkError = new Error('Сеть до Google AI Studio недоступна.');
+          networkError.isNetwork = true;
+          throw networkError;
+        } finally {
+          clearTimeout(timer);
+        }
+      }
+
+      var result = await request(body);
+      if (!result.response.ok) {
+        var message = result.data && result.data.error && result.data.error.message ? result.data.error.message : 'Запрос отклонён.';
+        if (/temperature|topP|topK|generationConfig/i.test(message)) {
+          delete body.generationConfig.temperature;
+          result = await request(body);
+        }
+      }
+      if (!result.response.ok) {
+        var apiMessage = result.data && result.data.error && result.data.error.message ? result.data.error.message : 'Ключ не принят Google AI Studio.';
+        var apiError = new Error(sanitizeError(apiMessage));
+        apiError.isApi = true;
+        throw apiError;
+      }
+      var text = extractGeminiText(result.data);
+      if (!text) {
+        var empty = new Error('Модель вернула пустой ответ. Повторите вопрос.');
+        empty.isApi = true;
+        throw empty;
+      }
+      return text;
+    }
+
+    async function sendUserQuery(query) {
+      if (!appState.isRegistered || isSending) return;
+      var clean = String(query || '').trim();
+      if (!clean) return;
+      pushMessage('user', clean);
+      saveState();
+      setTyping(true);
+      var reply = '';
+      try {
+        if (isEmergency(clean) || needsExamination(clean) || isDemoKey(appState.apiKey)) {
+          reply = generateClinicResponse(clean);
+        } else {
+          try {
+            reply = await callGemini(clean);
+            if (replyNeedsBlock(reply)) reply = simpleCare(clean) || examinationReferral(clean);
+          } catch (err) {
+            if (err && err.isNetwork) {
+              pushMessage('system', 'Связи с Google нет. Ответ из прайса клиники.');
+              reply = generateClinicResponse(clean);
+            } else {
+              pushMessage('assistant', sanitizeError(err && err.message));
+              saveState();
+              return;
+            }
+          }
+        }
+        reply = ensureEmergencyBanner(clean, reply);
+        pushMessage('assistant', reply);
+        saveState();
+      } finally {
+        setTyping(false);
+      }
+    }
+
+    function guardPhonePrefix() {
+      var input = document.getElementById('userPhoneInput');
+      if (input.value.indexOf('+998') !== 0) {
+        var digits = input.value.replace(/\D/g, '').replace(/^998/, '');
+        input.value = '+998 ' + digits;
+      }
+    }
+
+    function init() {
+      loadState();
+      applyModel();
+      document.getElementById('userPhoneInput').addEventListener('input', guardPhonePrefix);
+      document.getElementById('apiKeyInput').addEventListener('input', function () {
+        document.getElementById('apiKeyInput').classList.remove('needs-attention');
+      });
+      document.querySelectorAll('[data-service-question]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          askServiceQuestion(button.getAttribute('data-service-question'));
+        });
+      });
+      document.querySelectorAll('[data-quick-prompt]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          sendUserQuery(button.getAttribute('data-quick-prompt'));
+        });
+      });
+      document.getElementById('chatInput').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' && !event.shiftKey) {
+          event.preventDefault();
+          document.getElementById('chatForm').requestSubmit();
+        }
+      });
+      if (appState.userName) document.getElementById('userNameInput').value = appState.userName;
+      if (appState.userPhone) document.getElementById('userPhoneInput').value = appState.userPhone;
+      showLockedUi();
+    }
+
+    init();
+  </script>
+</body>
+</html>
